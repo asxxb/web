@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form - Food Fusion</title>
+    <!-- Include your CSS file if needed -->
+    <link rel="stylesheet" href="orderstyle.css">
+</head>
+
+<body>
+
+    <h1>Order items</h1>
+
+    <form action="order.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required>
+
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" readonly>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <!-- You can include other form fields as needed -->
+
+        <input type="submit" value="Submit Order">
+    </form>
+
+    <!-- Include your script.js file if needed -->
+    <!-- <script src="script.js"></script> -->
+
+    <script>
+        // Example: Calculate the price based on quantity (You can adjust this based on your pricing logic)
+        document.getElementById('quantity').addEventListener('input', function () {
+            var quantity = this.value;
+            var pricePerItem = 10; // Change this to your actual price per item
+            var totalPrice = quantity * pricePerItem;
+            document.getElementById('price').value = totalPrice.toFixed(2);
+        });
+    </script>
+
+</body>
+
+</html>

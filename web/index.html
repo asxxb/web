@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style> 
+    body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.login-section {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 50px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #000;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa;
+}
+    
+    </style>
+</head>
+
+<body>
+
+  
+
+    <section class="login-section">
+        <h2>Login</h2>
+        <form method="post" action="ulogin.php">
+            <label for="username">Username:</label>
+            <input type="text" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> Delicious Restaurant. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

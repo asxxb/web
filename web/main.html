@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+  <title>Delicious Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+  <script src="script.js"></script>
+ 
+
+<!-- Existing HTML code -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      // Check if the welcome prompt has been shown before
+      var hasShownWelcome = localStorage.getItem('hasShownWelcome');
+
+      if (!hasShownWelcome) {
+          // If not shown, prompt for the username
+          var username = prompt('Welcome! Please enter your username:');
+
+          // Display welcome message if a username is provided
+          if (username) {
+              alert('Welcome, ' + username + '!');
+              // Set the flag to indicate that the welcome prompt has been shown
+              localStorage.setItem('hasShownWelcome', true);
+          }
+      }
+  });
+</script>
+
+</body>
+</html>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Delicious Restaurant</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="menu.php">Menu</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="reservation.php">Reserve</a>
+      <a href="login.html">Admin</a>
+    </nav>
+  </header>
+
+
+
+
+
+
+
+
+  <section class="carousel">
+    <div>
+      <img src="img1.jpg" alt="Carousel Image 1">
+    </div>
+    <div>
+      <img src="img1.jpg" alt="Carousel Image 2">
+    </div>
+    <div>
+      <img src="img1.jpg" alt="Carousel Image 3">
+    </div>
+  </section>
+
+
+  <marquee behavior="scroll" direction="" style="color: rgb(9, 47, 47);"><h1>Trending Items</h1></marquee>
+
+
+
+
+  <section>
+
+    <div class="menu-item">
+      <img class="menu-img" src="img4.jpg" alt="Food Item 1">
+      <div class="menu-details">
+        <h2>Spaghetti Bolognese</h2>
+        <p>Delicious spaghetti with meat sauce.</p>
+        <p class="price">$12.99</p>
+        <a href="order.html" class="buy-button">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img class="menu-img" src="img2.jpg" alt="Food Item 1">
+      <div class="menu-details">
+        <h2>Piña Colada Burger</h2>
+        <p>Delicious spaghetti with meat sauce.</p>
+        <p class="price">$12.99</p>
+        <a href="order.html" class="buy-button">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img class="menu-img" src="img3.jpg" alt="Food Item 1">
+      <div class="menu-details">
+        <h2>Cheeseburger</h2>
+        <p>Delicious spaghetti with meat sauce.</p>
+        <p class="price">$12.99</p>
+        <a href="order.html" class="buy-button">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img class="menu-img" src="img2.jpg" alt="Food Item 1">
+      <div class="menu-details">
+        <h2>Piña Colada Burger</h2>
+        <p>Delicious spaghetti with meat sauce.</p>
+        <p class="price">$12.99</p>
+        <a href="order.html" class="buy-button">Buy Now</a>
+      </div>
+    </div>
+
+
+    <div class="menu-item">
+      <img class="menu-img" src="img4.jpg" alt="Food Item 1">
+      <div class="menu-details">
+        <h2>Spaghetti Bolognese</h2>
+        <p>Delicious spaghetti with meat sauce.</p>
+        <p class="price">$12.99</p>
+        <a href="order.html" class="buy-button">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img class="menu-img" src="img2.jpg" alt="Food Item 1">
+      <div class="menu-details">
+        <h2>Piña Colada Burger</h2>
+        <p>Delicious spaghetti with meat sauce.</p>
+        <p class="price">$12.99</p>
+        <a href="order.html" class="buy-button">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img class="menu-img" src="img3.jpg" alt="Food Item 1">
+      <div class="menu-details">
+        <h2>Cheeseburger</h2>
+        <p>Delicious spaghetti with meat sauce.</p>
+        <p class="price">$12.99</p>
+        <a href="order.html" class="buy-button">Buy Now</a>
+      </div>
+    </div>
+
+
+    <div class="menu-item">
+      <img class="menu-img" src="img4.jpg" alt="Food Item 1">
+      <div class="menu-details">
+        <h2>Spaghetti Bolognese</h2>
+        <p>Delicious spaghetti with meat sauce.</p>
+        <p class="price">$12.99</p>
+        <a href="order.html" class="buy-button">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img class="menu-img" src="img2.jpg" alt="Food Item 1">
+      <div class="menu-details">
+        <h2>Piña Colada Burger</h2>
+        <p>Delicious spaghetti with meat sauce.</p>
+        <p class="price">$12.99</p>
+        <a href="order.html" class="buy-button">Buy Now</a>
+      </div>
+    </div>
+
+
+  </section>
+  &nbsp;
+  &nbsp;
+  &nbsp;
+
+  <footer>
+    <p>&copy; 2023 Delicious Restaurant. All rights reserved.</p>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>
